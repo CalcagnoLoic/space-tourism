@@ -1,17 +1,18 @@
-import { Link } from "react-router-dom"
+import logo from '../../assets/img/shared/logo.svg'
+import { NavBar, NavLink, NavLogo, Logo, StyledLink } from "./style"
 
 export const Header = () => {
     return (
-        <nav>
-            <div>
-                <img src="" alt="Logo ICI" />
-            </div>
-            <div>
-                <Link to="/">00. Home</Link>
-                <Link to="/destination">01. Destination</Link>
-                <Link to="/crew">02. Crew</Link>
-                <Link to="technology">03. Technology</Link>
-            </div>
-        </nav>
+        <NavBar>
+            <NavLogo>
+                <Logo src={logo} alt="Logo space tourism" />
+            </NavLogo>
+            <NavLink>
+                <StyledLink to="/"><b>00</b> Home</StyledLink>
+                <StyledLink to="/destination"><b>01</b> Destination</StyledLink>
+                <StyledLink to="/crew"><b>02</b> Crew</StyledLink>
+                <StyledLink to="technology"><b>03</b> Technology</StyledLink>
+            </NavLink>
+        </NavBar>
     )
 }
