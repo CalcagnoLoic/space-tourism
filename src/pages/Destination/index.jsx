@@ -78,12 +78,12 @@ const Destination = () => {
     return (
         <div className="Layout-dest">
             <Header />
+            <Title>
+                <NumberTitle>01</NumberTitle>Pick your destination
+            </Title>
             <DestinationContainer>
                 <LeftColumn>
-                    <Title>
-                        <NumberTitle>01</NumberTitle>Pick your destination
-                    </Title>
-                    <div>`{renderImg()}`</div>
+                    <div className="imgPlanet">`{renderImg()}`</div>
                 </LeftColumn>
 
                 <RightColumn>
@@ -102,7 +102,9 @@ const Destination = () => {
                         <MainTitle>{dataDestination[detailPlanet].name}</MainTitle>
                         <Description>{dataDestination[detailPlanet].description}</Description>
                     </div>
+
                     <Rectangle></Rectangle>
+
                     <ContainerExtra>
                         <div>
                             <TitleInfo>avg. distance</TitleInfo>
