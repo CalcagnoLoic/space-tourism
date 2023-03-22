@@ -1,7 +1,11 @@
+import {Header} from '../../components/Header/index'
+import './style.css'
+
 const Crew = () => {
     return (
-        <div>
-            <h1>Crew</h1>
+        <div className='Layout-crew'>
+            <Header></Header>
+            <h2><span>Meet your crew</span></h2>
         </div>
     );
 };
