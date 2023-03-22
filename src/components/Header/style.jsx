@@ -7,6 +7,7 @@ export const NavBar = styled.nav`
     margin-bottom: 100px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 `;
 
 export const NavLink = styled.div`
@@ -38,4 +39,10 @@ export const StyledLink = styled(Link)`
     &:hover {
         text-decoration: underline;
     }
+`;
+
+export const Rectangle = styled.div`
+    background-color: rgba(56, 59, 75, 1);
+    width: 473px;
+    height: 1px;
 `;

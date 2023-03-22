@@ -16,7 +16,10 @@ import {
     Description,
     ContainerExtra, 
     TitleInfo,
-    SpanInfo
+    SpanInfo,
+    Rectangle,
+    NavBtn,
+    LinkBtn
 } from "./style";
 
 const dataDestination = {
@@ -53,8 +56,8 @@ const dataDestination = {
 const Destination = () => {
     const [detailPlanet, setDetailPlanet] = useState("moon");
 
-    const setPlanet = (name) => {
-        setDetailPlanet(name);
+    const setPlanet = (namePlanet) => {
+        setDetailPlanet(namePlanet);
     };
 
     const renderImg = () => {
@@ -84,22 +87,22 @@ const Destination = () => {
                 </LeftColumn>
 
                 <RightColumn>
-                    <div>
-                        <button onClick={() => setPlanet("moon")}>Moon</button>
-                        <button onClick={() => setPlanet("mars")}>Mars</button>
-                        <button onClick={() => setPlanet("europa")}>
+                    <NavBtn>
+                        <LinkBtn onClick={() => setPlanet("moon")}>Moon</LinkBtn>
+                        <LinkBtn onClick={() => setPlanet("mars")}>Mars</LinkBtn>
+                        <LinkBtn onClick={() => setPlanet("europa")}>
                             Europa
-                        </button>
-                        <button onClick={() => setPlanet("titan")}>
+                        </LinkBtn>
+                        <LinkBtn onClick={() => setPlanet("titan")}>
                             Titan
-                        </button>
-                    </div>
+                        </LinkBtn>
+                    </NavBtn>
 
                     <div>
                         <MainTitle>{dataDestination[detailPlanet].name}</MainTitle>
                         <Description>{dataDestination[detailPlanet].description}</Description>
                     </div>
-                    <div></div>
+                    <Rectangle></Rectangle>
                     <ContainerExtra>
                         <div>
                             <TitleInfo>avg. distance</TitleInfo>

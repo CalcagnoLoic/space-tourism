@@ -8,6 +8,11 @@
     src: url('../fonts/Bellefair/Bellefair-Regular.ttf');
 }
 
+@font-face {
+    font-family: barlowNotCondensed;
+    src: url('../fonts/Barlow/Barlow-Regular.ttf');
+}
+
 body {
     margin: 0;
     font-family: barlow;

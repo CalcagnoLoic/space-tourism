@@ -6,6 +6,7 @@ export const DestinationContainer = styled.div`
     margin-left: 165px;
     margin-right: 165px;
     gap: 300px;
+    margin-top: -50px;
 `;
 
 export const LeftColumn = styled.div``;
@@ -25,9 +26,7 @@ export const Title = styled.h2`
 
 export const NumberTitle = styled.span`
     opacity: 0.25;
-    &::after {
-        padding-right: 10px;
-    }
+    margin-right: 28px;
 `;
 
 export const MainTitle = styled.h1`
@@ -40,9 +39,10 @@ export const MainTitle = styled.h1`
 
 export const Description = styled.p`
     color: rgba(208, 214, 249, 1);
-    font-size: 20px;
+    font-size: 18px;
     line-height: 32px;
     max-width: 444px;
+    font-family: barlowNotCondensed;
 `;
 
 export const ContainerExtra = styled.div`
@@ -65,3 +65,26 @@ export const SpanInfo = styled.p`
     text-transform: uppercase;
     font-family: bellefair;
 `;
+
+export const Rectangle = styled.div`
+    background-color: rgba(56, 59, 75, 1);
+    max-width: 444px;
+    height: 1px;
+`;
+
+export const NavBtn = styled.div`
+    display: flex;
+    gap: 35px;
+`;
+
+export const LinkBtn = styled.button`
+    border: none;
+    color: rgba(208, 214, 249, 1);
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 19px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    background-color: transparent;
+    margin-bottom: -8%;
+`

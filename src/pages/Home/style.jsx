@@ -30,6 +30,7 @@ export const Paragraph = styled.p`
     font-size: 18px;
     line-height: 32px;
     max-width: 444px;
+    font-family: barlowNotCondensed;
 `;
 
 export const ButtonExplore = styled.p`
