@@ -5,14 +5,19 @@ export const DestinationContainer = styled.div`
     flex-direction: row;
     margin-left: 165px;
     margin-right: 165px;
-    gap: 300px;
+    gap: 250px;
     margin-top: -50px;
 `;
 
-export const LeftColumn = styled.div``;
+export const LeftColumn = styled.div`
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 5%;
+`;
 
 export const RightColumn = styled.div`
-    margin-top: 100px;
+    margin-top: 10px;
 `;
 
 export const Title = styled.h2`
@@ -22,6 +27,7 @@ export const Title = styled.h2`
     line-height: 33px;
     letter-spacing: 5px;
     margin-bottom: 90px;
+    margin-left: 166px;
 `;
 
 export const NumberTitle = styled.span`
@@ -87,4 +93,4 @@ export const LinkBtn = styled.button`
     cursor: pointer;
     background-color: transparent;
     margin-bottom: -8%;
-`
+`;
