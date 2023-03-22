@@ -83,7 +83,7 @@ const Destination = () => {
             </Title>
             <DestinationContainer>
                 <LeftColumn>
-                    <div className="imgPlanet">`{renderImg()}`</div>
+                    <div>`{renderImg()}`</div>
                 </LeftColumn>
 
                 <RightColumn>
