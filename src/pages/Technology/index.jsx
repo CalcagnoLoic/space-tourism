@@ -1,7 +1,10 @@
+import { Header } from "../../components/Header";
+import './style.css'
+
 const Technology = () => {
     return (
-        <div>
-            <h1>Technology</h1>
+        <div className="Layout-tech">
+            <Header></Header>
         </div>
     );
 };

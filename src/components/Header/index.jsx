@@ -18,7 +18,7 @@ export const Header = () => {
                 <StyledLink to="/crew">
                     <b>02</b> Crew
                 </StyledLink>
-                <StyledLink to="technology">
+                <StyledLink to="/technology">
                     <b>03</b> Technology
                 </StyledLink>
             </NavLink>
