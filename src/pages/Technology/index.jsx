@@ -10,13 +10,21 @@ import {
     NameTech,
     DescriptionTech,
     ContainerImg,
-    BtnLink
+    BtnLink,
+    StyledImg,
+    DivInfoTech,
+    StyledImgLandscape
 } from "./style";
 import "./style.css";
 
 import img_vehicule from "../../assets/img/technology/image-launch-vehicle-portrait.jpg";
 import img_capsule from "../../assets/img/technology/image-space-capsule-portrait.jpg";
 import img_spaceport from "../../assets/img/technology/image-spaceport-portrait.jpg";
+
+import img_vehicule_landscape from "../../assets/img/technology/image-launch-vehicle-landscape.jpg";
+import img_capsule_landscape from "../../assets/img/technology/image-space-capsule-landscape.jpg";
+import img_spaceport_landscape from "../../assets/img/technology/image-spaceport-landscape.jpg";
+
 
 const dataTechnology = {
     vehicle: {
@@ -44,21 +52,38 @@ const Technology = () => {
 
     const renderImg = () => {
         if(detailTech === "vehicle") {
-            return <img src={img_vehicule} alt="Illustration of launch vehicle" />
+            return <StyledImg src={img_vehicule} alt="Illustration of launch vehicle" />
         }
         if(detailTech === "capsule") {
-            return <img src={img_capsule} alt="Illustration of space capsule" />
+            return <StyledImg src={img_capsule} alt="Illustration of space capsule" />
         }
         if(detailTech === "spaceport") {
-            return <img src={img_spaceport} alt="Illustration of spaceport" />
+            return <StyledImg src={img_spaceport} alt="Illustration of spaceport" />
         }
     }
+
+    const renderImgLandscape = () => {
+        if(detailTech === "vehicle") {
+            return <StyledImgLandscape src={img_vehicule_landscape} alt="Illustration of launch vehicle" />
+        }
+        if(detailTech === "capsule") {
+            return <StyledImgLandscape src={img_capsule_landscape} alt="Illustration of space capsule" />
+        }
+        if(detailTech === "spaceport") {
+            return <StyledImgLandscape src={img_spaceport_landscape} alt="Illustration of spaceport" />
+        }
+    }
+
     return (
         <div className="Layout-tech">
             <Header></Header>
             <Title>
                 <NumberTitle>03</NumberTitle>Space launch 101
             </Title>
+
+            <div>
+                `{renderImgLandscape()}`
+            </div>
 
             <TechContainer>
                 <LeftColumn>
@@ -74,13 +99,13 @@ const Technology = () => {
                         </BtnLink>
                     </NavBtn>
 
-                    <div>
+                    <DivInfoTech>
                         <TitleIntro>The terminology...</TitleIntro>
                         <NameTech>{dataTechnology[detailTech].name}</NameTech>
                         <DescriptionTech>
                             {dataTechnology[detailTech].description}
                         </DescriptionTech>
-                    </div>
+                    </DivInfoTech>
                 </LeftColumn>
                 <ContainerImg>
                     `{renderImg()}`

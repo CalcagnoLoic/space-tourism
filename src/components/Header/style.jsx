@@ -17,6 +17,11 @@ export const NavLink = styled.div`
     background-color: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(40px);
     gap: 100px;
+    @media (min-width: 700px) and (max-width: 1200px) {
+        gap: 35px;
+        padding-left: 48px;
+        padding-right: 48px;
+    }
 `;
 
 export const NavLogo = styled.div``;
@@ -45,4 +50,7 @@ export const Rectangle = styled.div`
     background-color: rgba(56, 59, 75, 1);
     width: 473px;
     height: 1px;
+    @media (max-width: 1200px) {
+        display: none;
+    }
 `;

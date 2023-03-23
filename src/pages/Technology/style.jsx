@@ -9,8 +9,8 @@ export const Title = styled.h2`
     margin-bottom: 90px;
     margin-left: 166px;
     margin-bottom: 137px;
-    @media (max-width: 1450px) {
-        margin-bottom: 100px;
+    @media (max-width: 1200px) {
+        margin-bottom: 50px;
     }
 `;
 
@@ -22,10 +22,8 @@ export const NumberTitle = styled.span`
 export const LeftColumn = styled.div`
     display: flex;
     gap: 80px;
-    @media (max-width: 1450px) {
-        order: 1;
-        justify-content: center;
-        margin-top: 50px;
+    @media (min-width: 700px) and (max-width: 1200px) {
+        flex-direction: column;
     }
 `;
 
@@ -33,6 +31,10 @@ export const NavBtn = styled.div`
     display: flex;
     flex-direction: column;
     gap: 32px;
+    @media (min-width: 700px) and (max-width: 1200px) {
+        flex-direction: row;
+        justify-content: center;
+    }
 `;
 
 export const TechContainer = styled.div`
@@ -40,12 +42,12 @@ export const TechContainer = styled.div`
     flex-direction: row;
     margin-left: 165px;
     margin-right: 165px;
-    gap: 15%; 
+    gap: 15%;
     margin-top: -50px;
-    @media (max-width: 1450px) {
-        gap: 5%;
+    @media (min-width: 700px) and (max-width: 1200px) {
         flex-direction: column;
-        padding-bottom: 50px;
+        margin-left: 105px;
+        margin-right: 105px;
     }
 `;
 
@@ -56,6 +58,9 @@ export const TitleIntro = styled.h3`
     line-height: 19px;
     margin-top: 0px;
     letter-spacing: 3px;
+    @media (min-width: 700px) and (max-width: 1200px) {
+        text-align: center;
+    }
 `;
 
 export const NameTech = styled.h2`
@@ -75,21 +80,15 @@ export const DescriptionTech = styled.p`
     font-family: barlowNonCondensed;
     line-height: 32px;
     margin-top: 15px;
+    @media (min-width: 700px) and (max-width: 1200px) {
+        text-align: center;
+    }
 `;
 
 export const ContainerImg = styled.div`
     margin-top: -8%;
-    width: 100px;
-    @media (max-width: 1450px) {
-        order: 0;
-        margin-top: -1%;
-        display: block;
-        margin: 0 auto;
-        width: 50%;
-    }
-    @media (min-width: 850px) and (max-width: 1100px) {
-        width: 80%;
-    }
+    display: flex;
+    align-items: center;
 `;
 
 export const BtnLink = styled.button`
@@ -103,3 +102,30 @@ export const BtnLink = styled.button`
     cursor: pointer;
     border-color: white;
 `;
+
+export const StyledImg = styled.img`
+    width: 450%;
+    display: flex;
+    justify-content: end;
+    @media (max-width: 1200px) {
+        display: none;
+    }
+`;
+
+export const DivInfoTech = styled.div`
+    @media (min-width: 700px) and (max-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+`;
+
+export const StyledImgLandscape = styled.img`
+    display: none;
+    @media (max-width: 1200px) {
+        display: block;
+        width: 100%;
+        margin-bottom: 8%;
+    }
+`;
+
