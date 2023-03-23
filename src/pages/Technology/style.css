@@ -13,3 +13,10 @@
         background-size: cover;
     }
 }
+@media (min-width: 600px) and (max-width: 1200px) {
+    .Layout-tech {
+        background: url('../../assets/img/technology/background-technology-mobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

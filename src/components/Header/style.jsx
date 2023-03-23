@@ -8,6 +8,9 @@ export const NavBar = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 750px){
+        margin-bottom: 45px;
+    }
 `;
 
 export const NavLink = styled.div`
@@ -17,10 +20,13 @@ export const NavLink = styled.div`
     background-color: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(40px);
     gap: 100px;
-    @media (min-width: 700px) and (max-width: 1200px) {
+    @media (min-width: 750px) and (max-width: 1200px) {
         gap: 35px;
         padding-left: 48px;
         padding-right: 48px;
+    }
+    @media (max-width: 750px){
+        display: none;
     }
 `;
 

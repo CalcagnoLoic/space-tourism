@@ -19,7 +19,9 @@ import {
     SpanInfo,
     Rectangle,
     NavBtn,
-    LinkBtn
+    LinkBtn,
+    DivInfo,
+    ImgPlanetMobile
 } from "./style";
 
 const dataDestination = {
@@ -62,16 +64,16 @@ const Destination = () => {
 
     const renderImg = () => {
         if (detailPlanet === "moon") {
-            return <img src={img_moon} alt="Illustration of moon" />;
+            return <ImgPlanetMobile src={img_moon} alt="Illustration of moon" />;
         }
         if (detailPlanet === "mars") {
-            return <img src={img_mars} alt="Illustration of Mars" />;
+            return <ImgPlanetMobile src={img_mars} alt="Illustration of Mars" />;
         }
         if (detailPlanet === "europa") {
-            return <img src={img_europa} alt="Illustration of Europa" />;
+            return <ImgPlanetMobile src={img_europa} alt="Illustration of Europa" />;
         }
         if (detailPlanet === "titan") {
-            return <img src={img_titan} alt="Illustration of Titan" />;
+            return <ImgPlanetMobile src={img_titan} alt="Illustration of Titan" />;
         }
     };
 
@@ -98,10 +100,10 @@ const Destination = () => {
                         </LinkBtn>
                     </NavBtn>
 
-                    <div>
+                    <DivInfo>
                         <MainTitle>{dataDestination[detailPlanet].name}</MainTitle>
                         <Description>{dataDestination[detailPlanet].description}</Description>
-                    </div>
+                    </DivInfo>
 
                     <Rectangle></Rectangle>
 

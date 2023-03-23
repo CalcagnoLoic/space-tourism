@@ -6,6 +6,8 @@ import {
     Paragraph,
     ButtonExplore,
     Circle,
+    DivTexte,
+    DivCircle
 } from "./style";
 import { Header } from "../../components/Header/index";
 import "./style.css";
@@ -14,9 +16,9 @@ const Home = () => {
     return (
         <div className="Layout">
             <Header />
-            <HomeContainer className="test">
+            <HomeContainer>
                 <Container>
-                    <div>
+                    <DivTexte>
                         <Subtitle>So, you want to travel to</Subtitle>
                         <Title>SPACE</Title>
                         <Paragraph>
@@ -26,10 +28,13 @@ const Home = () => {
                             because we’ll give you a truly out of this world
                             experience!
                         </Paragraph>
-                    </div>
-                    <Circle>
-                        <ButtonExplore>Explore</ButtonExplore>
-                    </Circle>
+                    </DivTexte>
+                    <DivCircle>
+                        <Circle>
+                            <ButtonExplore>Explore</ButtonExplore>
+                        </Circle>
+                    </DivCircle>
+                    
                 </Container>
             </HomeContainer>
         </div>

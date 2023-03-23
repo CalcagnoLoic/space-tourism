@@ -11,7 +11,8 @@ import {
     LeftColumn,
     NavBtn,
     DotBtn,
-    StyledImg
+    StyledImg,
+    DivInfo
 } from "./style";
 import "./style.css";
 
@@ -79,7 +80,7 @@ const Crew = () => {
             return (
                 <StyledImg
                     src={img_engineer}
-                    alt="Illustratio of Anousheh Ansari"
+                    alt="Illustration of Anousheh Ansari"
                 />
             );
         }
@@ -93,13 +94,13 @@ const Crew = () => {
             </Title>
             <CrewContainer>
                 <LeftColumn>
-                    <div>
+                    <DivInfo>
                         <JobTitle>{dataCrew[detailCrew].jobtitle}</JobTitle>
                         <Name>{dataCrew[detailCrew].name}</Name>
                         <Description>
                             {dataCrew[detailCrew].description}
                         </Description>
-                    </div>
+                    </DivInfo>
                     <NavBtn>
                         <DotBtn onClick={() => setCrew("commander")}></DotBtn>
                         <DotBtn onClick={() => setCrew("specialist")}></DotBtn>
