@@ -10,7 +10,8 @@ import {
     RenderImg,
     LeftColumn,
     NavBtn,
-    DotBtn
+    DotBtn,
+    StyledImg
 } from "./style";
 import "./style.css";
 
@@ -55,33 +56,30 @@ const Crew = () => {
     const renderImgCrew = () => {
         if (detailCrew === "commander") {
             return (
-                <img src={img_commander} alt="Illustration of Douglas Hurley" />
+                <StyledImg src={img_commander} alt="Illustration of Douglas Hurley" />
             );
         }
         if (detailCrew === "specialist") {
             return (
-                <img
+                <StyledImg
                     src={img_specialist}
                     alt="Illustration of Mark Shuttleworth"
-                    className="renderImgBis"
                 />
             );
         }
         if (detailCrew === "pilot") {
             return (
-                <img
+                <StyledImg
                     src={img_pilot}
                     alt="Illustration of Victor Glover"
-                    className="renderImgBis"
                 />
             );
         }
         if (detailCrew === "engineer") {
             return (
-                <img
+                <StyledImg
                     src={img_engineer}
                     alt="Illustratio of Anousheh Ansari"
-                    className="renderImgBis"
                 />
             );
         }
