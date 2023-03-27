@@ -6,6 +6,7 @@ import { Home } from "./pages/Home";
 import { Destination } from "./pages/Destination";
 import { Crew } from "./pages/Crew";
 import { Technology } from "./pages/Technology";
+import { Error } from "./components/Error";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -16,6 +17,7 @@ root.render(
                 <Route path="/destination" element={<Destination />}></Route>
                 <Route path="/crew" element={<Crew />}></Route>
                 <Route path="/technology" element={<Technology />}></Route>
+                <Route path="*" element={<Error />}></Route>
             </Routes>
         </Router>
     </React.StrictMode>

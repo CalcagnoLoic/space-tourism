@@ -54,7 +54,7 @@ export const Title = styled.h2`
         margin-left: 38px;
     }
     @media (max-width: 650px) {
-        margin-left: 38px;
+        margin-left: 18px;
         font-size: 19px;
         text-align: center;
     }
