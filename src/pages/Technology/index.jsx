@@ -89,13 +89,13 @@ const Technology = () => {
             <TechContainer>
                 <LeftColumn>
                     <NavBtn>
-                        <BtnLink onClick={() => setTechnology("vehicle")}>
+                        <BtnLink onClick={() => setTechnology("vehicle")} className={detailTech === "vehicle" ? 'activeDisplayTech' : "notActiveDisplayTech"}>
                             1
                         </BtnLink>
-                        <BtnLink onClick={() => setTechnology("spaceport")}>
+                        <BtnLink onClick={() => setTechnology("spaceport")} className={detailTech === "spaceport" ? 'activeDisplayTech' : "notActiveDisplayTech"}>
                             2
                         </BtnLink>
-                        <BtnLink onClick={() => setTechnology("capsule")}>
+                        <BtnLink onClick={() => setTechnology("capsule")} className={detailTech === "capsule" ? 'activeDisplayTech' : "notActiveDisplayTech"}>
                             3
                         </BtnLink>
                     </NavBtn>

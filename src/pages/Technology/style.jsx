@@ -115,13 +115,10 @@ export const ContainerImg = styled.div`
 export const BtnLink = styled.button`
     font-family: bellefair;
     font-size: 32px;
-    background-color: transparent;
-    color: rgba(255, 255, 255, 1);
     border-radius: 100%;
     width: 80px;
     height: 80px;
     cursor: pointer;
-    border-color: white;
     @media (max-width: 750px) {
         width: 50px;
         height: 50px;

@@ -20,3 +20,14 @@
         background-size: cover;
     }
 }
+
+.notActiveDisplayTech {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 1);
+    border-color: rgba(255, 255, 255, 0.17);
+}
+
+.activeDisplayTech {
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+}
