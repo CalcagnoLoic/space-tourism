@@ -14,14 +14,14 @@ import {
     NumberTitle,
     MainTitle,
     Description,
-    ContainerExtra, 
+    ContainerExtra,
     TitleInfo,
     SpanInfo,
     Rectangle,
     NavBtn,
     LinkBtn,
     DivInfo,
-    ImgPlanetMobile
+    ImgPlanetMobile,
 } from "./style";
 import { Footer } from "../../components/Footer";
 
@@ -65,16 +65,27 @@ const Destination = () => {
 
     const renderImg = () => {
         if (detailPlanet === "moon") {
-            return <ImgPlanetMobile src={img_moon} alt="Illustration of moon" />;
+            return (
+                <ImgPlanetMobile src={img_moon} alt="Illustration of moon" />
+            );
         }
         if (detailPlanet === "mars") {
-            return <ImgPlanetMobile src={img_mars} alt="Illustration of Mars" />;
+            return (
+                <ImgPlanetMobile src={img_mars} alt="Illustration of Mars" />
+            );
         }
         if (detailPlanet === "europa") {
-            return <ImgPlanetMobile src={img_europa} alt="Illustration of Europa" />;
+            return (
+                <ImgPlanetMobile
+                    src={img_europa}
+                    alt="Illustration of Europa"
+                />
+            );
         }
         if (detailPlanet === "titan") {
-            return <ImgPlanetMobile src={img_titan} alt="Illustration of Titan" />;
+            return (
+                <ImgPlanetMobile src={img_titan} alt="Illustration of Titan" />
+            );
         }
     };
 
@@ -91,19 +102,47 @@ const Destination = () => {
 
                 <RightColumn>
                     <NavBtn>
-                        <LinkBtn onClick={() => setPlanet("moon")}>Moon</LinkBtn>
-                        <LinkBtn onClick={() => setPlanet("mars")}>Mars</LinkBtn>
-                        <LinkBtn onClick={() => setPlanet("europa")}>
+                        <LinkBtn
+                            onClick={() => setPlanet("moon")}
+                            className={
+                                detailPlanet === "moon" ? "activeItemDest" : ""
+                            }
+                        >
+                            Moon
+                        </LinkBtn>
+                        <LinkBtn
+                            onClick={() => setPlanet("mars")}
+                            className={
+                                detailPlanet === "mars" ? "activeItemDest" : ""
+                            }
+                        >
+                            Mars
+                        </LinkBtn>
+                        <LinkBtn
+                            onClick={() => setPlanet("europa")}
+                            className={
+                                detailPlanet === "europa" ? "activeItemDest" : ""
+                            }
+                        >
                             Europa
                         </LinkBtn>
-                        <LinkBtn onClick={() => setPlanet("titan")}>
+                        <LinkBtn
+                            onClick={() => setPlanet("titan")}
+                            className={
+                                detailPlanet === "titan" ? "activeItemDest" : ""
+                            }
+                        >
                             Titan
                         </LinkBtn>
                     </NavBtn>
 
                     <DivInfo>
-                        <MainTitle>{dataDestination[detailPlanet].name}</MainTitle>
-                        <Description>{dataDestination[detailPlanet].description}</Description>
+                        <MainTitle>
+                            {dataDestination[detailPlanet].name}
+                        </MainTitle>
+                        <Description>
+                            {dataDestination[detailPlanet].description}
+                        </Description>
                     </DivInfo>
 
                     <Rectangle></Rectangle>
@@ -111,7 +150,9 @@ const Destination = () => {
                     <ContainerExtra>
                         <div>
                             <TitleInfo>avg. distance</TitleInfo>
-                            <SpanInfo>{dataDestination[detailPlanet].avgDistance}</SpanInfo>
+                            <SpanInfo>
+                                {dataDestination[detailPlanet].avgDistance}
+                            </SpanInfo>
                         </div>
                         <div>
                             <TitleInfo>est. travel time </TitleInfo>

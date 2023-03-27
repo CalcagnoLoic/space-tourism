@@ -44,11 +44,10 @@ export const StyledLink = styled(Link)`
     text-transform: uppercase;
     line-height: 19px;
     letter-spacing: 3px;
-    &:active {
-        text-decoration: underline;
-    }
+    cursor: pointer;
     &:hover {
-        text-decoration: underline;
+        border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+        margin-bottom: -40px;
     }
 `;
 

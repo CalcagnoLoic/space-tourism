@@ -29,9 +29,10 @@ const Home = () => {
                             experience!
                         </Paragraph>
                     </DivTexte>
+                    
                     <DivCircle>
                         <Circle>
-                            <ButtonExplore>Explore</ButtonExplore>
+                            <ButtonExplore href="/destination">Explore</ButtonExplore>
                         </Circle>
                     </DivCircle>
                     

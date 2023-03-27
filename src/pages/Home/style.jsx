@@ -60,7 +60,7 @@ export const Paragraph = styled.p`
     }
 `;
 
-export const ButtonExplore = styled.p`
+export const ButtonExplore = styled.a`
     color: rgba(11, 13, 23, 1);
     font-size: 32px;
     letter-spacing: 2px;
@@ -69,6 +69,7 @@ export const ButtonExplore = styled.p`
     display: flex;
     align-items: center;
     font-family: bellefair;
+    text-decoration: none;
     @media (max-width: 1200px) {
         justify-content: center;
     }
@@ -110,4 +111,5 @@ export const DivTexte = styled.div`
 export const DivCircle = styled.div`
     display: flex;
     justify-content: center;
+    align-items: end;
 `

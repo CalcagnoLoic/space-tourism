@@ -12,7 +12,7 @@ import {
     NavBtn,
     DotBtn,
     StyledImg,
-    DivInfo
+    DivInfo,
 } from "./style";
 import "./style.css";
 
@@ -58,7 +58,10 @@ const Crew = () => {
     const renderImgCrew = () => {
         if (detailCrew === "commander") {
             return (
-                <StyledImg src={img_commander} alt="Illustration of Douglas Hurley" />
+                <StyledImg
+                    src={img_commander}
+                    alt="Illustration of Douglas Hurley"
+                />
             );
         }
         if (detailCrew === "specialist") {
@@ -103,10 +106,30 @@ const Crew = () => {
                         </Description>
                     </DivInfo>
                     <NavBtn>
-                        <DotBtn onClick={() => setCrew("commander")}></DotBtn>
-                        <DotBtn onClick={() => setCrew("specialist")}></DotBtn>
-                        <DotBtn onClick={() => setCrew("pilot")}></DotBtn>
-                        <DotBtn onClick={() => setCrew("engineer")}></DotBtn>
+                        <DotBtn
+                            onClick={() => setCrew("commander")}
+                            className={
+                                detailCrew === "commander" ? "activeDotCrew" : "NotActiveDot"
+                            }
+                        ></DotBtn>
+                        <DotBtn
+                            onClick={() => setCrew("specialist")}
+                            className={
+                                detailCrew === "specialist" ? "activeDotCrew" : "NotActiveDot"
+                            }
+                        ></DotBtn>
+                        <DotBtn
+                            onClick={() => setCrew("pilot")}
+                            className={
+                                detailCrew === "pilot" ? "activeDotCrew" : "NotActiveDot"
+                            }
+                        ></DotBtn>
+                        <DotBtn
+                            onClick={() => setCrew("engineer")}
+                            className={
+                                detailCrew === "engineer" ? "activeDotCrew" : "NotActiveDot"
+                            }
+                        ></DotBtn>
                     </NavBtn>
                 </LeftColumn>
                 <RenderImg>`{renderImgCrew()}`</RenderImg>

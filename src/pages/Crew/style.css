@@ -21,3 +21,10 @@
     }
 }
 
+.activeDotCrew {
+    opacity: 1;
+    background-color: rgb(255, 255, 255);
+}
+.NotActiveDot {
+    opacity: 0.17;
+}

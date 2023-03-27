@@ -152,7 +152,6 @@ export const NavBtn = styled.div`
     margin-bottom: 55px;
     @media (max-width: 1300px) {
         justify-content: center;
-        margin-bottom: 55px;
     }
     @media (max-width: 650px) {
         margin-left: 5%;
@@ -173,6 +172,9 @@ export const LinkBtn = styled.button`
     margin-bottom: -8%;
     @media (max-width: 650px) {
         font-size: 14px;
+    }
+    &:hover {
+        border-bottom: 3px solid rgba(255, 255, 255, 0.5);
     }
 `;
 

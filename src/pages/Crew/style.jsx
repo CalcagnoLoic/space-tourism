@@ -122,9 +122,7 @@ export const DotBtn = styled.button`
     border-radius: 100%;
     height: 15px;
     width: 15px;
-    opacity: 0.17;
     cursor: pointer;
-    &:active,
     &:hover {
         opacity: 1;
     }
