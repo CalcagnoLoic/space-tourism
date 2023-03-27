@@ -23,6 +23,7 @@ import {
     DivInfo,
     ImgPlanetMobile
 } from "./style";
+import { Footer } from "../../components/Footer";
 
 const dataDestination = {
     moon: {
@@ -124,6 +125,8 @@ const Destination = () => {
                     </ContainerExtra>
                 </RightColumn>
             </DestinationContainer>
+
+            <Footer />
         </div>
     );
 };

@@ -20,6 +20,7 @@ import img_commander from "../../assets/img/crew/image-douglas-hurley.webp";
 import img_specialist from "../../assets/img/crew/image-mark-shuttleworth.webp";
 import img_pilot from "../../assets/img/crew/image-victor-glover.webp";
 import img_engineer from "../../assets/img/crew/image-anousheh-ansari.webp";
+import { Footer } from "../../components/Footer";
 
 const dataCrew = {
     commander: {
@@ -110,6 +111,8 @@ const Crew = () => {
                 </LeftColumn>
                 <RenderImg>`{renderImgCrew()}`</RenderImg>
             </CrewContainer>
+
+            <Footer />
         </div>
     );
 };

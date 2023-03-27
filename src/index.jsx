@@ -6,7 +6,7 @@ import { Home } from "./pages/Home";
 import { Destination } from "./pages/Destination";
 import { Crew } from "./pages/Crew";
 import { Technology } from "./pages/Technology";
-import { Error } from "./components/Error";
+import { Error } from "./pages/Error";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

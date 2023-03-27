@@ -24,6 +24,7 @@ import img_spaceport from "../../assets/img/technology/image-spaceport-portrait.
 import img_vehicule_landscape from "../../assets/img/technology/image-launch-vehicle-landscape.jpg";
 import img_capsule_landscape from "../../assets/img/technology/image-space-capsule-landscape.jpg";
 import img_spaceport_landscape from "../../assets/img/technology/image-spaceport-landscape.jpg";
+import { Footer } from "../../components/Footer";
 
 
 const dataTechnology = {
@@ -111,6 +112,8 @@ const Technology = () => {
                     `{renderImg()}`
                 </ContainerImg>
             </TechContainer>
+
+            <Footer />
         </div>
     );
 };
