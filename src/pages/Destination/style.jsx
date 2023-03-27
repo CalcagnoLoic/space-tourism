@@ -161,7 +161,9 @@ export const NavBtn = styled.div`
 `;
 
 export const LinkBtn = styled.button`
-    border: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
     color: rgba(208, 214, 249, 1);
     font-size: 16px;
     text-transform: uppercase;

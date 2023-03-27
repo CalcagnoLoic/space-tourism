@@ -105,7 +105,9 @@ const Destination = () => {
                         <LinkBtn
                             onClick={() => setPlanet("moon")}
                             className={
-                                detailPlanet === "moon" ? "activeItemDest" : ""
+                                detailPlanet === "moon"
+                                    ? "activeItemDest"
+                                    : "notActiveItemDest"
                             }
                         >
                             Moon
@@ -113,7 +115,9 @@ const Destination = () => {
                         <LinkBtn
                             onClick={() => setPlanet("mars")}
                             className={
-                                detailPlanet === "mars" ? "activeItemDest" : ""
+                                detailPlanet === "mars"
+                                    ? "activeItemDest"
+                                    : "notActiveItemDest"
                             }
                         >
                             Mars
@@ -121,7 +125,9 @@ const Destination = () => {
                         <LinkBtn
                             onClick={() => setPlanet("europa")}
                             className={
-                                detailPlanet === "europa" ? "activeItemDest" : ""
+                                detailPlanet === "europa"
+                                    ? "activeItemDest"
+                                    : "notActiveItemDest"
                             }
                         >
                             Europa
@@ -129,7 +135,9 @@ const Destination = () => {
                         <LinkBtn
                             onClick={() => setPlanet("titan")}
                             className={
-                                detailPlanet === "titan" ? "activeItemDest" : ""
+                                detailPlanet === "titan"
+                                    ? "activeItemDest"
+                                    : "notActiveItemDest"
                             }
                         >
                             Titan

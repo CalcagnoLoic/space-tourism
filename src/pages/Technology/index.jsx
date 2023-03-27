@@ -13,7 +13,7 @@ import {
     BtnLink,
     StyledImg,
     DivInfoTech,
-    StyledImgLandscape
+    StyledImgLandscape,
 } from "./style";
 import "./style.css";
 
@@ -25,7 +25,6 @@ import img_vehicule_landscape from "../../assets/img/technology/image-launch-veh
 import img_capsule_landscape from "../../assets/img/technology/image-space-capsule-landscape.jpg";
 import img_spaceport_landscape from "../../assets/img/technology/image-spaceport-landscape.jpg";
 import { Footer } from "../../components/Footer";
-
 
 const dataTechnology = {
     vehicle: {
@@ -52,28 +51,58 @@ const Technology = () => {
     };
 
     const renderImg = () => {
-        if(detailTech === "vehicle") {
-            return <StyledImg src={img_vehicule} alt="Illustration of launch vehicle" />
+        if (detailTech === "vehicle") {
+            return (
+                <StyledImg
+                    src={img_vehicule}
+                    alt="Illustration of launch vehicle"
+                />
+            );
         }
-        if(detailTech === "capsule") {
-            return <StyledImg src={img_capsule} alt="Illustration of space capsule" />
+        if (detailTech === "capsule") {
+            return (
+                <StyledImg
+                    src={img_capsule}
+                    alt="Illustration of space capsule"
+                />
+            );
         }
-        if(detailTech === "spaceport") {
-            return <StyledImg src={img_spaceport} alt="Illustration of spaceport" />
+        if (detailTech === "spaceport") {
+            return (
+                <StyledImg
+                    src={img_spaceport}
+                    alt="Illustration of spaceport"
+                />
+            );
         }
-    }
+    };
 
     const renderImgLandscape = () => {
-        if(detailTech === "vehicle") {
-            return <StyledImgLandscape src={img_vehicule_landscape} alt="Illustration of launch vehicle" />
+        if (detailTech === "vehicle") {
+            return (
+                <StyledImgLandscape
+                    src={img_vehicule_landscape}
+                    alt="Illustration of launch vehicle"
+                />
+            );
         }
-        if(detailTech === "capsule") {
-            return <StyledImgLandscape src={img_capsule_landscape} alt="Illustration of space capsule" />
+        if (detailTech === "capsule") {
+            return (
+                <StyledImgLandscape
+                    src={img_capsule_landscape}
+                    alt="Illustration of space capsule"
+                />
+            );
         }
-        if(detailTech === "spaceport") {
-            return <StyledImgLandscape src={img_spaceport_landscape} alt="Illustration of spaceport" />
+        if (detailTech === "spaceport") {
+            return (
+                <StyledImgLandscape
+                    src={img_spaceport_landscape}
+                    alt="Illustration of spaceport"
+                />
+            );
         }
-    }
+    };
 
     return (
         <div className="Layout-tech">
@@ -82,20 +111,39 @@ const Technology = () => {
                 <NumberTitle>03</NumberTitle>Space launch 101
             </Title>
 
-            <div>
-                `{renderImgLandscape()}`
-            </div>
+            <div>`{renderImgLandscape()}`</div>
 
             <TechContainer>
                 <LeftColumn>
                     <NavBtn>
-                        <BtnLink onClick={() => setTechnology("vehicle")} className={detailTech === "vehicle" ? 'activeDisplayTech' : "notActiveDisplayTech"}>
+                        <BtnLink
+                            onClick={() => setTechnology("vehicle")}
+                            className={
+                                detailTech === "vehicle"
+                                    ? "activeDisplayTech"
+                                    : "notActiveDisplayTech"
+                            }
+                        >
                             1
                         </BtnLink>
-                        <BtnLink onClick={() => setTechnology("spaceport")} className={detailTech === "spaceport" ? 'activeDisplayTech' : "notActiveDisplayTech"}>
+                        <BtnLink
+                            onClick={() => setTechnology("spaceport")}
+                            className={
+                                detailTech === "spaceport"
+                                    ? "activeDisplayTech"
+                                    : "notActiveDisplayTech"
+                            }
+                        >
                             2
                         </BtnLink>
-                        <BtnLink onClick={() => setTechnology("capsule")} className={detailTech === "capsule" ? 'activeDisplayTech' : "notActiveDisplayTech"}>
+                        <BtnLink
+                            onClick={() => setTechnology("capsule")}
+                            className={
+                                detailTech === "capsule"
+                                    ? "activeDisplayTech"
+                                    : "notActiveDisplayTech"
+                            }
+                        >
                             3
                         </BtnLink>
                     </NavBtn>
@@ -108,9 +156,7 @@ const Technology = () => {
                         </DescriptionTech>
                     </DivInfoTech>
                 </LeftColumn>
-                <ContainerImg>
-                    `{renderImg()}`
-                </ContainerImg>
+                <ContainerImg>`{renderImg()}`</ContainerImg>
             </TechContainer>
 
             <Footer />
