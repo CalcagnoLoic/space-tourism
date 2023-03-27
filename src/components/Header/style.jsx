@@ -59,3 +59,36 @@ export const Rectangle = styled.div`
         display: none;
     }
 `;
+
+export const StyledIcon = styled.img`
+    margin-right: 40px;
+    display: none;
+    cursor: pointer;
+    @media (max-width: 750px){
+        display: block;
+        position: absolute;
+        right: 0;
+        z-index: 10;
+    }
+`
+export const NavResponsive = styled.div`
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+    transition: all ease-in 0.5s;
+`;
+
+export const LinkResponsive = styled(Link)`
+    @media (max-width: 750px) {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 1);
+        font-size: 16px;
+        text-transform: uppercase;
+        line-height: 19px;
+        letter-spacing: 3px;
+        cursor: pointer;
+        padding-left: 50px;
+        &:nth-child(1) {
+            padding-top: 120px;
+        }
+    }
+`;
