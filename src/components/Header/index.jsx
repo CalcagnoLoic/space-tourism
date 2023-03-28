@@ -60,31 +60,31 @@ export const Header = () => {
             </div>
 
             <NavResponsive className={`${isOpen ? "isVisible" : "isHidden"}`}>
-                <LinkResponsive to="/space-tourism">
+                <LinkResponsive to="/">
                     <b>00</b> {itemDataNav.home.title}
                 </LinkResponsive>
-                <LinkResponsive to="/destination">
+                <LinkResponsive to="/space-tourism/destination">
                     <b>01</b> {itemDataNav.destination.title}
                 </LinkResponsive>
-                <LinkResponsive to="/crew">
+                <LinkResponsive to="/space-tourism/crew">
                     <b>02</b> {itemDataNav.crew.title}
                 </LinkResponsive>
-                <LinkResponsive to="/technology">
+                <LinkResponsive to="/space-tourism/technology">
                     <b>03</b> {itemDataNav.technology.title}
                 </LinkResponsive>
             </NavResponsive>
 
             <NavLink>
-                <StyledLink to="/space-tourism">
+                <StyledLink to="/">
                     <b>00</b> {itemDataNav.home.title}
                 </StyledLink>
-                <StyledLink to="/destination">
+                <StyledLink to="/space-tourism/destination">
                     <b>01</b> {itemDataNav.destination.title}
                 </StyledLink>
-                <StyledLink to="/crew">
+                <StyledLink to="/space-tourism/crew">
                     <b>02</b> {itemDataNav.crew.title}
                 </StyledLink>
-                <StyledLink to="/technology">
+                <StyledLink to="/space-tourism/technology">
                     <b>03</b> {itemDataNav.technology.title}
                 </StyledLink>
             </NavLink>
