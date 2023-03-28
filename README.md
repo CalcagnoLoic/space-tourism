@@ -4,7 +4,7 @@
     <img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" alt="Logo VScode">
     <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="logo react">
     <img src="https://img.shields.io/badge/React_Router_6-CA4245?style=for-the-badge&logo=react+router&logoColor=FFFFFF" alt="logo react router">
-    <img src="https://img.shields.io/badge/Styled_Component-DB7093?style=for-the-badge&logo=styled-components&logoColor=FFFFFF" alt="logo styled component">
+    <img src="https://img.shields.io/badge/Styled_Components-DB7093?style=for-the-badge&logo=styled-components&logoColor=FFFFFF" alt="logo styled component">
     <img src="https://img.shields.io/badge/Frontend_Mentor-5C2D91?style=for-the-badge&logoColor=white&logo=Frontend-Mentor&logoColor=white" alt="frontend mentor"/>
 </p>
 
