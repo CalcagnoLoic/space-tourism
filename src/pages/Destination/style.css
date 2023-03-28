@@ -6,9 +6,17 @@
     height: 100%;
 }
 
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (min-width: 750px) and (max-width: 1200px) {
     .Layout-dest {
         background: url('../../assets/img/destination/background-destination-tablet.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 750px) {
+    .Layout-dest {
+        background: url('../../assets/img/destination/background-destination-mobile.jpg');
         background-repeat: no-repeat;
         background-size: cover;
     }
