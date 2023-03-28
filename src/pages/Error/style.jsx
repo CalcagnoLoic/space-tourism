@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const ErrorContainer = styled.div`
     background-color: rgba(255, 255, 255, 0.04);
@@ -31,7 +32,7 @@ export const ErrorTitle = styled.h1`
     }
 `;
 
-export const LinkError = styled.a`
+export const LinkError = styled(Link)`
     color: white;
     cursor: pointer;
     text-decoration: none;

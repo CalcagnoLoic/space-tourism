@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const HomeContainer = styled.div``;
 
@@ -60,7 +61,7 @@ export const Paragraph = styled.p`
     }
 `;
 
-export const ButtonExplore = styled.a`
+export const ButtonExplore = styled(Link)`
     color: rgba(11, 13, 23, 1);
     font-size: 32px;
     letter-spacing: 2px;

@@ -32,7 +32,7 @@ const Home = () => {
                     
                     <DivCircle>
                         <Circle>
-                            <ButtonExplore href="/destination">Explore</ButtonExplore>
+                            <ButtonExplore to="/destination">Explore</ButtonExplore>
                         </Circle>
                     </DivCircle>
                     

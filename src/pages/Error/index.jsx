@@ -19,7 +19,7 @@ const Error = () => {
                         anymore because it has either been deleted or moved...
                     </ErrorTitle>
                     <ImgError src={error404} alt="Error 404, site not found" />
-                    <LinkError href="/">Go to the site</LinkError>
+                    <LinkError to="/space-tourism">Go to the site</LinkError>
                 </ErrorContainer>
             </MainContainer>
         </div>

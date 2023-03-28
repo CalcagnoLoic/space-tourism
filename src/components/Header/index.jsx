@@ -60,7 +60,7 @@ export const Header = () => {
             </div>
 
             <NavResponsive className={`${isOpen ? "isVisible" : "isHidden"}`}>
-                <LinkResponsive to="/">
+                <LinkResponsive to="/space-tourism">
                     <b>00</b> {itemDataNav.home.title}
                 </LinkResponsive>
                 <LinkResponsive to="/destination">
@@ -75,7 +75,7 @@ export const Header = () => {
             </NavResponsive>
 
             <NavLink>
-                <StyledLink to="/">
+                <StyledLink to="/space-tourism">
                     <b>00</b> {itemDataNav.home.title}
                 </StyledLink>
                 <StyledLink to="/destination">

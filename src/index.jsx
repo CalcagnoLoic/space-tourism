@@ -13,10 +13,10 @@ root.render(
     <React.StrictMode>
         <Router>
             <Routes>
-                <Route exact path="/" element={<Home />}></Route>
-                <Route path="/destination" element={<Destination />}></Route>
-                <Route path="/crew" element={<Crew />}></Route>
-                <Route path="/technology" element={<Technology />}></Route>
+                <Route exact path="space-tourism/" element={<Home />}></Route>
+                <Route path="destination/" element={<Destination />}></Route>
+                <Route path="crew/" element={<Crew />}></Route>
+                <Route path="technology/" element={<Technology />}></Route>
                 <Route path="*" element={<Error />}></Route>
             </Routes>
         </Router>
