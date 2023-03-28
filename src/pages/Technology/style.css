@@ -6,14 +6,14 @@
     height: 100%;
     background-position: center;
 }
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (min-width: 750px) and (max-width: 1200px) {
     .Layout-tech {
         background: url('../../assets/img/technology/background-technology-tablet.jpg');
         background-repeat: no-repeat;
         background-size: cover;
     }
 }
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (max-width: 750px) {
     .Layout-tech {
         background: url('../../assets/img/technology/background-technology-mobile.jpg');
         background-repeat: no-repeat;
