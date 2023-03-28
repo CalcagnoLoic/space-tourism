@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./assets/style/index.css";
-import { Route, Routes, BrowserRouter as Router} from "react-router-dom";
+import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Destination } from "./pages/Destination";
 import { Crew } from "./pages/Crew";

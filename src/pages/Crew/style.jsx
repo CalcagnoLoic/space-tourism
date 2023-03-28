@@ -90,6 +90,7 @@ export const RenderImg = styled.div`
     @media (max-width: 750px) {
         order: 0;
         margin-top: -8px;
+        border-bottom: rgba(56, 59, 75, 1) solid 2px;
     }
 `;
 
@@ -109,6 +110,7 @@ export const NavBtn = styled.div`
     gap: 25px;
     margin-top: 35px;
     margin-bottom: 5%;
+    z-index: 1;
     @media (max-width: 1200px) {
         margin-bottom: 0;
     }

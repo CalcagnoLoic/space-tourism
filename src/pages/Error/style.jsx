@@ -11,7 +11,7 @@ export const ErrorContainer = styled.div`
     gap: 15px;
     justify-content: center;
     align-items: center;
-    @media (max-width: 750px){
+    @media (max-width: 750px) {
         max-width: 222px;
     }
 `;
@@ -26,7 +26,7 @@ export const MainContainer = styled.div`
 export const ErrorTitle = styled.h1`
     text-align: center;
     color: white;
-    @media (max-width: 750px){
+    @media (max-width: 750px) {
         font-size: 20px;
     }
 `;
@@ -39,14 +39,14 @@ export const LinkError = styled.a`
     &:hover {
         font-style: italic;
     }
-    @media (max-width: 750px){
+    @media (max-width: 750px) {
         font-size: 16px;
     }
 `;
 
 export const ImgError = styled.img`
     width: 50%;
-    @media (max-width: 750px){
-        width: 40%;;
+    @media (max-width: 750px) {
+        width: 40%;
     }
-`
+`;

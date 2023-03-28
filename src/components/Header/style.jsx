@@ -8,7 +8,7 @@ export const NavBar = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media (max-width: 750px){
+    @media (max-width: 750px) {
         margin-bottom: 45px;
     }
 `;
@@ -25,7 +25,7 @@ export const NavLink = styled.div`
         padding-left: 48px;
         padding-right: 48px;
     }
-    @media (max-width: 750px){
+    @media (max-width: 750px) {
         display: none;
     }
 `;
@@ -64,17 +64,19 @@ export const StyledIcon = styled.img`
     margin-right: 40px;
     display: none;
     cursor: pointer;
-    @media (max-width: 750px){
+    @media (max-width: 750px) {
         display: block;
         position: absolute;
         right: 0;
-        z-index: 10;
+        z-index: 20;
     }
-`
+`;
 export const NavResponsive = styled.div`
     background-color: transparent;
     backdrop-filter: blur(40px);
-    transition: all ease-in 0.5s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
 `;
 
 export const LinkResponsive = styled(Link)`

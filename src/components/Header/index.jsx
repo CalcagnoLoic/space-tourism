@@ -9,11 +9,11 @@ import {
     Rectangle,
     StyledIcon,
     NavResponsive,
-    LinkResponsive
+    LinkResponsive,
 } from "./style";
 import hamburger from "../../assets/img/shared/icon-hamburger.svg";
 import close from "../../assets/img/shared/icon-close.svg";
-import './style.css'
+import "./style.css";
 
 const dataNav = {
     home: {
@@ -38,11 +38,11 @@ export const Header = () => {
 
     useEffect(() => {
         if (isOpen) {
-            document.body.style.overflow = 'hidden'
+            document.body.style.overflow = "hidden";
         } else {
-            document.body.style.overflow = 'visible'
+            document.body.style.overflow = "visible";
         }
-    }, [isOpen])
+    }, [isOpen]);
 
     return (
         <NavBar>
@@ -59,7 +59,7 @@ export const Header = () => {
                 />
             </div>
 
-            <NavResponsive className={`${isOpen ? 'isVisible' : 'isHidden'}`}>
+            <NavResponsive className={`${isOpen ? "isVisible" : "isHidden"}`}>
                 <LinkResponsive to="/">
                     <b>00</b> {itemDataNav.home.title}
                 </LinkResponsive>
